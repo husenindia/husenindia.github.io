@@ -12,6 +12,6 @@ You will find all the information about  **Husen Telwala** here. This page conta
 
 ## Visit the site
 
-[Visit site]((https://husentelwalainfo.github.io/)/)
+[Visit site](https://husentelwalainfo.github.io/)
 
 
