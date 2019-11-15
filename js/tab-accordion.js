@@ -4,7 +4,8 @@
 /*************************/
 
 $(document).ready(function(){
-	var clickedId;
+    var clickedId;
+    var hash = window.location.hash; 
 	$(function () {
 		$tabsLink=$('.responsive-tab .cst-tabs-links');		
 		$activeTab=$tabsLink.find('li.active > a');
@@ -12,7 +13,14 @@ $(document).ready(function(){
 		tabContentInsertMenuLink();
 		$activeIdMobile=$tabsLink.find('li.active-tab-mobile > a').attr('href');		
 		$($activeIdMobile).addClass('active-tab-mobile').find('.cst-content-link').addClass('active');
-		
+		if (hash) {
+		    $('.cst-tab-content').hide();
+		    $('.responsive-tab').find(hash).fadeIn().addClass('active-tab');
+		    $('.cst-tabs-links').find('li').removeClass('active');
+		    $('.cst-tabs-links').find('a[href="' + hash + '"]').parents('li').addClass('active');
+		    $tabsLink.slideToggle();
+		}
+
 		$tabsLink.on('click','> li > a',function(){
 		    $obj = $(this);		    
 			$('.cst-tab-content').hide();
