@@ -50,7 +50,7 @@ img { max-width:100%;}
 .work-profile li:nth-child(3n+1) { clear: left; }
 .blog-listing li a { display: flex; padding-bottom:15px; border-bottom: 1px solid rgba(255,255,255,0.5); margin-bottom:30px; color:#FFF; text-decoration: none; }
 .blog-listing li a:hover h2 { text-decoration: underline;}
-.blog-listing li img { width: 200px; border-bottom: 5px solid #FFF; }
+.blog-listing li img { width: 200px; border-bottom: 5px solid #FFF; max-width: 200px; }
 
 .blog-detail h2, .blog-listing li h2 { margin-bottom: 5px;  }
 .blog-detail h6, .blog-listing li h6 { margin-bottom: 12px; opacity:0.6; font-size: 15px; }
