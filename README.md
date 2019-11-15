@@ -1,4 +1,5 @@
 
+
 # Welcome to Husen Telwala's Information page!
 
 You will find all the information about  **Husen Telwala** here. This page contains all the information about technical skills, educational information, work portfolio of Husen Telwala. More you can find blog posts as well containing quality information related to new front-end technologies.
@@ -21,9 +22,12 @@ You will find all the information about  **Husen Telwala** here. This page conta
 
 ### Technical guideline to Post a blog
 - User have to first select **blogpost** branch
-- Add **blog listing**  in 'index.html' file, 'blog listing' section
-- Add **blog detail** in 'blog-detail.html' file.
-- Add **valid image** in images folder.
+- Add **blog detail** page.
+- Give **proper name** to blog detail page. Name should **describe** your blog post. 
+  > For example if your blog post about new features of Angular 8 than valid name should be **angular8-new-features.html**.
+- Add Image, Blog title, Author information and Short Summary in blog listing section of **index.html** file.
+  > Don't miss to give Blog detail link from here (page you created. In our example it is, **angular8-new-features.html**).
+- Add **Valid image** in images folder.
 
 ## Author details
 - Created by **Husen Telwala** .
