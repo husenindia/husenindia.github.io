@@ -4,4 +4,7 @@
 .section .col-50  { width:100%; float:none; clear:both;}
 .section h3 { margin-bottom:30px;}
 .section p { line-height:20px; font-size:14px; }
+.photo-gallery { padding: 10px; }
+.photo-listing { display: block; margin: 0; }
+.photo-listing li { max-width: 100%; padding-left:0; padding-right:0; }
 }
