@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*********** CORE ***********/
+ul li { list-style:none; }
+h1,h2,h3,h4,h5,h6 { margin:0px; }
+ul { margin:0px; padding:0px; }
+.inner { padding:20px; }
+.cst-tabs-links:after{ content:''; display:block; clear:both; }
+.cst-tabs-container { clear:both; }
+.cst-tabs-container .cst-content-link { display:none; }
+.cst-tabs-container .cst-tab-content { display:none; }
+.cst-tabs-container .cst-tab-content .inner { display:block !important; }
+.cst-tabs-container .cst-tab-content.active-tab { display:block; }
+.menu-icon { margin:0px; padding:0px; display:block; height:30px; width:30px; background-color:#CCC; display:none; }
+
+@media (min-width: 768px) {
+.cst-tabs-links { display:flex !important; height:auto !important; }
+}
+@media (max-width: 767px) {
+.cst-tabs-links { display:flex !important; flex-wrap: wrap; }
+ul.cst-tabs-links > li { float:none; width:50%; margin-bottom:5px; }
+.footer-links ul li a { padding: 15px 5px; font-weight: 500; font-size:14px; }
+.menu-icon { display:none }
+.footer-links {border-top:1px solid #FFF}
+.footer-links ul { display: block;}
+} 
+
