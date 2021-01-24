@@ -7,4 +7,7 @@
 .photo-gallery { padding: 10px; }
 .photo-listing { display: block; margin: 0; }
 .photo-listing li { max-width: 100%; padding-left:0; padding-right:0; }
+.pdleft200px { padding-left:0; }
+.section { padding-left: 20px; padding-right: 20px; padding-bottom: 120px; flex-wrap: wrap; }
+.section .inner { padding:0; }
 }

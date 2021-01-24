@@ -44,7 +44,6 @@ img { max-width:100%;}
 .work-profile li { width: 33.33%; float:left; }
 .work-profile li a { display:block; margin:10px; position:relative; }
 .work-profile li a img { max-width: 100%; height:auto;}
-.work-profile li a:hover .overlay { display: flex; }
 .overlay { display:none; position:absolute; left: 0; left:0; right:0; bottom: 0; height:100%; width:100%;  background-color:rgba(27,26,26,0.75); justify-content: center; align-items:center; color:#FFF; font-size: 20px;  }
 .work-profile li:nth-child(3n+1) { clear: left; }
 .blog-listing li a { display: flex; padding-bottom:15px; border-bottom: 1px solid rgba(255,255,255,0.5); margin-bottom:30px; color:#FFF; text-decoration: none; }
