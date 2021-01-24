@@ -22,9 +22,11 @@ $(document).ready(function(){
 		}
 
 		$tabsLink.on('click','> li > a',function(){
-		    $obj = $(this);		    
-			$('.cst-tab-content').hide();
-			showActiveTab($obj);
+			$obj = $(this);		    
+			if($obj.attr('data-link')!='true') {
+				$('.cst-tab-content').hide();
+				showActiveTab($obj);
+			}
 		});	
 		$('body').on('click', '.menu-icon', function () {
 		    $obj = $(this);
