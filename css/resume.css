@@ -1,4 +1,32 @@
 ﻿
-/*font-family: 'Public Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Signika', sans-serif;*/
+.container { max-width: 1170px; margin: 0 auto; }
+h1 { margin:0; }
+body, .fontps { font-family: 'Public Sans', sans-serif; font-weight: 400; } 
+.fontro_bold  { font-family: 'Roboto', sans-serif; font-weight: 700; }
+.fontro_medium  { font-family: 'Roboto', sans-serif; font-weight: 500; }
+
+.fontsi { font-family: 'Signika', sans-serif; font-weight: 600; }
+/*
+*/
+
+.bglightpurple { background-color: #efe8e9; }
+.fs12px { font-size: 12px; }
+.fs13px { font-size: 13px; }
+.fs14px { font-size: 14px; }
+.fs15px { font-size: 15px; }
+.fs16px { font-size: 16px; }
+.fs17px { font-size: 17px; }
+.fs18px { font-size: 18px; }
+.fs20px { font-size: 20px; }
+.fs24px { font-size: 24px; }
+ul { padding:0;}
+.list-style-none { list-style: none;}
+.min-w-16px { min-width: 16px;}
+a { color:#000; text-decoration: none;}
+.border-left { border-left: 2px solid #000; }
+.h-100vh { min-height: 100vh;}
+.border-black { border: 1px solid #000; height: 100%;}
+.lh16px { line-height: 16px;}
+.lh14px { line-height: 14px;}
+.lh18px { line-height: 18px;}
+.lh20px { line-height: 20px;}
