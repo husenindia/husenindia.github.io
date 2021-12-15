@@ -3,9 +3,8 @@ CACHE MANIFEST
 
 
 CACHE:
-css/common.css
-css/page.gif
-js/custom.min.js
+css/style.css
+css/media.css
 
 NETWORK:
 *
