@@ -1,5 +1,40 @@
-<h1> Husen Telwala</h1>
-<app-about></app-about>
-<app-resume></app-resume>
-<app-contact></app-contact>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <h1> Husen Telwala</h1>
+            <ul>
+                <ul>
+                    <li>
+                        <a routerLinkActive="semibold"  
+                        routerLink="home" 
+                        href="javascript:void(0);">Home</a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="semibold"  
+                        routerLink="./about" 
+                        href="javascript:void(0);">About</a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="semibold"  
+                        routerLink="./portfolio" 
+                        href="javascript:void(0);">Portfolio</a>
+                    </li>
+                    <li>
+                        <a routerLinkActive="semibold"  
+                        routerLink="./resume" 
+                        href="javascript:void(0);">Resume</a>
+                    </li>
+
+                    <li>
+                        <a routerLinkActive="semibold"  
+                        routerLink="./contact" 
+                        href="javascript:void(0);">contact</a>
+                    </li>
+                </ul>
+            </ul>    
+        </div>
+        <div class="col-md-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>      
+</div>
