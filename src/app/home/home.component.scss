@@ -1,0 +1,42 @@
+    
+h1 { font-size: 2.75em; font-weight: var(--bold); }
+.hero-text i { color:var(--grey);}
+.w-300px { 
+    height: 300px;
+}
+.h-300px {
+    width: 300px;
+}
+.animated-profile-pic {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    -webkit-animation: morph 8s ease-in-out 1s infinite;
+    animation: morph 8s ease-in-out 1s infinite;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 9px hsl(0deg 0% 100% / 30%);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    overflow: hidden;
+}
+@-webkit-keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    to {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    to {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}

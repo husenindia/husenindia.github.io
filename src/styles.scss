@@ -5,7 +5,9 @@
     --bold: 800;
     --grey:#767676;
     --bglightgrey: #f1f1f1;
+    --clrblack: #000;
 }
+
 .regular {
     font-weight: var(--regular);
 }
@@ -22,3 +24,11 @@ li { list-style: none;}
 .bglightgrey { 
     background-color: var(--bglightgrey);
 }
+.font-16 { font-size: 1em;}
+.font-18 { font-size: 1.125em;}
+.font-20 { font-size: 1.25em;}
+.font-22 { font-size: 1.375em;}
+.font-24 { font-size: 1.5em;}
+
+.clrhovergrey:hover { color: var(--grey); }
+.clrblack { color:var(--clrblack); }
