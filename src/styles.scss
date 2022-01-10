@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --regular:400;
+    --medium: 500;
+    --bold: 800;
+    --grey:#767676;
+    --bglightgrey: #f1f1f1;
+}
+.regular {
+    font-weight: var(--regular);
+}
+.medium {
+    font-weight: var(--medium);
+}
+.bold {
+    font-weight: var(--bold);
+}
+body { font-family: 'Montserrat', sans-serif; }
+.h-100vh { height: 100vh; }
+ul {padding: 0;}
+li { list-style: none;}
+.bglightgrey { 
+    background-color: var(--bglightgrey);
+}
