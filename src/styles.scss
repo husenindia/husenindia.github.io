@@ -3,11 +3,15 @@
     --regular:400;
     --medium: 500;
     --bold: 800;
-    --grey:#767676;
-    --bglightgrey: #f1f1f1;
+    --clrgrey:#767676;
+    --clrlightgrey: #f1f1f1;
     --clrblack: #000;
+    --clrwhite: #FFF;
 }
-
+body {
+    font-size: 85%;
+}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
 .regular {
     font-weight: var(--regular);
 }
@@ -18,17 +22,33 @@
     font-weight: var(--bold);
 }
 body { font-family: 'Montserrat', sans-serif; }
-.h-100vh { height: 100vh; }
+.h-100vh { min-height: 100vh; }
 ul {padding: 0;}
 li { list-style: none;}
 .bglightgrey { 
-    background-color: var(--bglightgrey);
+    background-color: var(--clrlightgrey);
 }
 .font-16 { font-size: 1em;}
 .font-18 { font-size: 1.125em;}
 .font-20 { font-size: 1.25em;}
 .font-22 { font-size: 1.375em;}
 .font-24 { font-size: 1.5em;}
-
-.clrhovergrey:hover { color: var(--grey); }
+.bgwhite {background-color: var(--clrwhite); }
+.clrhovergrey:hover { color: var(--clrgrey); }
 .clrblack { color:var(--clrblack); }
+.letter-spacing-xs { letter-spacing: 0.15em;}
+
+@media (min-width: 576px) {    
+    body { font-size: 87%; }
+}
+@media (min-width: 768px) {    
+    body { font-size:90%; }
+    .font-md-18 { font-size: 1.125em; }
+    .text-md-left { text-align: left !important;}
+}
+@media (min-width: 992px) {    
+    body { font-size:90%; }
+}
+@media (min-width: 1200px) {    
+    body { font-size:100%; }
+}

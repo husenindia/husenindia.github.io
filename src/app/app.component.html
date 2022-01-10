@@ -1,53 +1,58 @@
 <div class="container-fluid">
-    <div class="row h-100vh">
-        <div class="col-md-3 align-self-center justify-self-center ps-5">
-            <div class="ps-2">
-            <ul>
-                <li class="mb-3">
-                    <a routerLinkActive="clrblack"  
-                    routerLink="home" 
-                    href="javascript:void(0);">
-                    <fa-icon class="me-2 min-w-18px d-inline-block text-center" [icon]="faHome"></fa-icon>
-                    <span>Home</span>
-                </a>
-                </li>
-                <li class="mb-3">
-                    <a routerLinkActive="clrblack"  
-                    routerLink="./about" 
-                    href="javascript:void(0);">
-                    <fa-icon class="me-2 min-w-18px d-inline-block text-center" [icon]="faUser"></fa-icon>                    
-                    <span>About</span>
-                </a>
-                </li>
-                <li class="mb-3">
-                    <a routerLinkActive="clrblack"  
-                    routerLink="./portfolio" 
-                    href="javascript:void(0);">
-                    <fa-icon class="me-2 min-w-18px d-inline-block text-center" [icon]="faSuitcase"></fa-icon>
-                    <span>Portfolio</span>    
-                </a>
-                </li>
-                <li class="mb-3">
-                    <a routerLinkActive="clrblack"  
-                    routerLink="./resume" 
-                    href="javascript:void(0);">
-                    <fa-icon class="me-2 min-w-18px d-inline-block text-center" [icon]="faFileAlt"></fa-icon>
-                    <span>Resume</span>                    
-                </a>
-                </li>
-
-                <li class="mb-3">
-                    <a routerLinkActive="clrblack"  
-                    routerLink="./contact" 
-                    href="javascript:void(0);">
-                    <fa-icon class="me-2 min-w-18px d-inline-block text-center" [icon]="faEnvelope"></fa-icon>
-                    <span>Contact</span>
+    <div class="row h-100vh bglightgrey flex-column flex-md-row">
+        <div class="col-md-3 ps-md-5 bgwhite d-md-flex">
+            <div class="ps-md-2 d-flex d-md-block justify-content-between align-items-center py-3 py-md-0 align-self-md-center">
+                <h4 class="mb-md-5 text-uppercase bold font-16 font-md-18 letter-spacing-xs">Husen Telwala</h4>
+                <ul class="mb-0 d-flex d-md-block">
+                    <li class="mb-md-3">
+                        <a routerLinkActive="clrblack"  
+                        routerLink="home" 
+                        href="javascript:void(0);"
+                        class="p-2 p-md-0">
+                        <fa-icon class="me-md-2 min-w-18px d-inline-block text-center" [icon]="faHome"></fa-icon>
+                        <span class="d-none d-md-inline-block">Home</span>
                     </a>
-                </li>
-            </ul>
-        </div>            
+                    </li>
+                    <li class="mb-md-3">
+                        <a routerLinkActive="clrblack"  
+                        routerLink="./about" 
+                        href="javascript:void(0);"
+                        class="p-2 p-md-0">
+                        <fa-icon class="me-md-2 min-w-18px d-inline-block text-center" [icon]="faUser"></fa-icon>                    
+                        <span class="d-none d-md-inline-block">About</span>
+                    </a>
+                    </li>
+                    <li class="mb-md-3">
+                        <a routerLinkActive="clrblack"  
+                        routerLink="./portfolio" 
+                        href="javascript:void(0);"
+                        class="p-2 p-md-0">
+                        <fa-icon class="me-md-2 min-w-18px d-inline-block text-center" [icon]="faSuitcase"></fa-icon>
+                        <span class="d-none d-md-inline-block">Portfolio</span>    
+                    </a>
+                    </li>
+                    <li class="mb-md-3">
+                        <a routerLinkActive="clrblack"  
+                        routerLink="./resume" 
+                        href="javascript:void(0);"
+                        class="p-2 p-md-0">
+                        <fa-icon class="me-md-2 min-w-18px d-inline-block text-center" [icon]="faFileAlt"></fa-icon>
+                        <span class="d-none d-md-inline-block">Resume</span>                    
+                    </a>
+                    </li>
+                    <li class="mb-md-3">
+                        <a routerLinkActive="clrblack"  
+                        routerLink="./contact" 
+                        href="javascript:void(0);"
+                        class="p-2 p-md-0">
+                        <fa-icon class="me-md-2 min-w-18px d-inline-block text-center" [icon]="faEnvelope"></fa-icon>
+                        <span class="d-none d-md-inline-block">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>            
         </div>
-        <div class="col-md-9 bglightgrey px-5 py-5">
+        <div class="col-md-9 px-md-5 py-5">
             <router-outlet></router-outlet>
         </div>
     </div>      
