@@ -18,16 +18,20 @@ h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
 .medium {
     font-weight: var(--medium);
 }
-.bold {
+b, .bold {
     font-weight: var(--bold);
 }
 body { font-family: 'Montserrat', sans-serif; }
 .h-100vh { min-height: 100vh; }
 ul {padding: 0;}
 li { list-style: none;}
+p { margin: 0; padding:0;}
 .bglightgrey { 
     background-color: var(--clrlightgrey);
 }
+.clrlightgrey { color:var(--clrlightgrey);}
+.clrgrey { color: var(--clrgrey); }
+.font-14 { font-size: 0.9em;}
 .font-16 { font-size: 1em;}
 .font-18 { font-size: 1.125em;}
 .font-20 { font-size: 1.25em;}
@@ -37,6 +41,23 @@ li { list-style: none;}
 .clrhovergrey:hover { color: var(--clrgrey); }
 .clrblack { color:var(--clrblack); }
 .letter-spacing-xs { letter-spacing: 0.15em;}
+.font-32 { font-size: 2em;  }
+h1 { font-size: 2.65em; font-weight: var(--bold); }
+.two-layered-title {
+    h1 { z-index: 2;}
+    h3 { position: absolute; 
+        left:0; 
+        right:0; 
+        margin:auto; 
+        top:0; 
+        bottom:0; 
+        font-size:5em; 
+        line-height: 0.7em; 
+        z-index: 1;
+        opacity:0.25;
+        letter-spacing: 0.1em; }
+    
+}
 
 @media (min-width: 576px) {    
     body { font-size: 87%; }
