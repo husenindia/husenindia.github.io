@@ -1,0 +1,15 @@
+.portfolio-card { height: 200px; background-color: var(--clrwhite); width: 100%; }
+@media (min-width: 768px) {  
+    .portfolio-card { height: 252px; }  
+}
+@media (min-width: 992px) {    
+    .portfolio-card { height: 148px; }
+}
+@media (min-width: 1200px) {    
+    .portfolio-card { height: 252px; }
+}
+@media (min-width: 1800px) {    
+    .portfolio-card { height: 334px; }
+}
+
+
