@@ -1,10 +1,47 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$newsite-primary: mat-palette($mat-indigo);
+$newsite-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$newsite-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$newsite-theme: mat-light-theme((
+  color: (
+    primary: $newsite-primary,
+    accent: $newsite-accent,
+    warn: $newsite-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($newsite-theme);
+
 /* You can add global styles to this file, and also import other style files */
 :root {
     --regular:400;
     --medium: 500;
     --bold: 800;
     --clrgrey:#767676;
+    --clrmediumgrey: #8e8e8e;
     --clrlightgrey: #f1f1f1;
+    --clrdarkgrey: #494949;
     --clrblack: #000;
     --clrwhite: #FFF;
 }
@@ -21,7 +58,7 @@ h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
 b, .bold {
     font-weight: var(--bold);
 }
-body { font-family: 'Montserrat', sans-serif; }
+body, body * { font-family: 'Montserrat', sans-serif !important; }
 .h-100vh { min-height: 100vh; }
 ul {padding: 0;}
 li { list-style: none;}
@@ -74,4 +111,18 @@ h1 { font-size: 2.65em; font-weight: var(--bold); }
 @media (min-width: 1200px) {    
     body { font-size:100%; }
 
+}
+
+html, body { height: 100%; }
+
+body {
+    .mat-tab-labels { justify-content: center;}
+    .mat-tab-label { opacity: 1; color:var(--clrdarkgrey); font-size: 1em; min-width: 0;}
+    .mat-tab-label-active  { color:var(--clrblack); font-weight: var(--medium); }
+    .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+        background-color: var(--clrblack);
+    }
+    .mat-tab-body-content { overflow-x: hidden; overflow-y:auto; }
+    .mat-tab-body-content { min-height: calc(100vh - 180px) !important;}
+    .overflow-overlay { overflow: overlay; }
 }
