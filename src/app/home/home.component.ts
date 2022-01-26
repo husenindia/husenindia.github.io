@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faLinkedin, faPinterest, faStackOverflow,faGithub, faBehanceSquare } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { Meta,Title } from '@angular/platform-browser';
 
 @Component({
@@ -17,9 +17,11 @@ export class HomeComponent implements OnInit {
   faBehanceSquare;
   faPinterest;
   faLinkedin;
+  faEnvelope;
   constructor(private meta: Meta,private title: Title) {
     this.name="Husen Telwala";
-    this.imagePath ="../../assets/images/"
+    this.imagePath ="../../assets/images/";
+    this.faEnvelope = faEnvelope;
     this.faStackOverflow = faStackOverflow;
     this.faGithub = faGithub;
     this.faGlobe = faGlobe;
