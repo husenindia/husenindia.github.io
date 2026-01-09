@@ -13,13 +13,11 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(projectName, projectImage): void {
+  openDialog(projectName: string, projectImage:string): void {
     const dialogRef = this.dialog.open(ProjectDetailDialog, {
       width: '90%',
       data: {projectName: projectName, projectImage: projectImage},
     });
-
-    
   }
 
 }
@@ -30,6 +28,7 @@ export interface ProjectDetailData {
 @Component({
   selector: 'project-details',
   templateUrl: 'project-details.html',
+  styleUrls: ['./portfolio.component.scss']
 })
 export class ProjectDetailDialog {
   constructor(

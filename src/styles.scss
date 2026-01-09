@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
 b, .bold {
     font-weight: var(--bold);
 }
-body, body * { font-family: 'Montserrat', sans-serif !important; }
+body, body * { font-family: 'Montserrat', sans-serif; }
 .h-100vh { min-height: 100vh; }
 ul {padding: 0;}
 li { list-style: none;}
@@ -128,3 +128,11 @@ body {
 }
 
 .text-no-underline { text-decoration: none;}
+
+.bg-white { background-color: #ffffff;}
+body .mat-dialog-container { 
+
+    background: transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.lh-normal { line-height: normal;}

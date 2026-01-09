@@ -1,10 +1,110 @@
-<div mat-dialog-content>
-  <h1>{{data.projectName}}</h1>  
-  <img 
-  class="img-fluid"
-  [src]="'../../assets/images/portfolio/' + data.projectImage" 
-  [alt]="data.projectName">
+<div class="bg-white">
+<h2 mat-dialog-title class="custom-dialog__header mb-0">
+  <span>Case study: {{data.projectName}}</span>
+  <mat-icon class="btn font-20 lh-normal p-0" (click)="onNoClick()" aria-hidden="false" aria-label="Close icon">close</mat-icon>
+</h2>
+<div mat-dialog-content class="dialog__content">
+  <div class="p-3">
+    <div class="case-study">
+
+    <h2>Problem & Context</h2>
+    <p>Workshop planning was largely manual and fragmented, resulting in:</p>
+    <ul>
+      <li>Inefficient job allocation</li>
+      <li>Overloaded or underutilized mechanics</li>
+      <li>Limited visibility into daily and upcoming service schedules</li>
+    </ul>
+    <p>Stakeholders needed a system that improved operational efficiency, while mechanics needed a clear, low-friction planning experience suitable for tablet usage on the workshop floor.</p>
+    <hr class="divider">
+
+    <h2>My Role</h2>
+    <p>As the <strong>Senior UX/UI Designer</strong>, I was responsible for:</p>
+    <ul>
+      <li>Requirement gathering and stakeholder workshops</li>
+      <li>Translating business needs into user-centric workflows</li>
+      <li>Conducting user research and usability testing</li>
+      <li>Designing wireframes, prototypes, and final UI</li>
+      <li>Leading multiple design iterations based on feedback</li>
+    </ul>
+    <hr class="divider">
+
+    <h2>Discovery & Research</h2>
+    <p>I conducted interviews with:</p>
+    <ul>
+      <li>Workshop managers</li>
+      <li>Service advisors</li>
+      <li>Mechanics</li>
+    </ul>
+    <p><strong>Key insights:</strong></p>
+    <ul>
+      <li>Planning decisions are made quickly and often change during the day</li>
+      <li>Users needed at-a-glance visibility rather than detailed screens</li>
+      <li>Tablet interactions had to work in noisy, high-pressure environments</li>
+    </ul>
+    <p>These insights directly shaped the interaction model and layout.</p>
+    <hr class="divider">
+
+    <h2>Problem Definition</h2>
+    <p>How might we enable workshop managers to plan and adjust service schedules in real time, while giving mechanics clear, actionable task visibility with minimal interaction effort?</p>
+    <hr class="divider">
+
+    <h2>UX Strategy & Design Approach</h2>
+    <ul>
+      <li>Designed a <strong>time-based planning layout</strong> optimized for tablet use</li>
+      <li>Prioritized <strong>visual hierarchy</strong> over dense data</li>
+      <li>Reduced cognitive load by grouping tasks by mechanic and service stage</li>
+      <li>Introduced status-driven interactions instead of form-heavy inputs</li>
+    </ul>
+    <hr class="divider">
+
+    <h2>Prototyping & Iteration</h2>
+    <p>I created:</p>
+    <ul>
+      <li>Low-fidelity wireframes to validate workflows</li>
+      <li>Interactive prototypes to test real-world scenarios</li>
+      <li>High-fidelity UI prototypes for stakeholder alignment</li>
+    </ul>
+    <p>Several iterations were made to simplify drag-and-drop planning, reduce steps in task reassignment, and improve readability under workshop lighting conditions.</p>
+    <hr class="divider">
+
+    <h2>Usability Testing & Feedback</h2>
+    <p>Usability testing revealed:</p>
+    <ul>
+      <li>Confusion around job prioritization</li>
+      <li>Missed status updates during peak hours</li>
+    </ul>
+    <p>Based on feedback:</p>
+    <ul>
+      <li>Status indicators were redesigned for clarity</li>
+      <li>Touch targets were increased</li>
+      <li>Color usage was refined to improve quick recognition</li>
+    </ul>
+    <hr class="divider">
+
+    <h2>UI Design & Visual System</h2>
+    <ul>
+      <li>High-contrast colors for workshop environments</li>
+      <li>Clear typography for quick scanning</li>
+      <li>Consistent component behavior across states</li>
+      <li>Scalable patterns for future feature expansion</li>
+    </ul>
+    <p>The design system ensured consistency across planner views and related workshop tools.</p>
+    <hr class="divider">
+
+    <h2>Outcome & Learnings</h2>
+    <ul>
+      <li>Improved clarity and speed of daily planning</li>
+      <li>Reduced manual coordination between managers and mechanics</li>
+      <li>Strong stakeholder buy-in due to iterative validation</li>
+    </ul>
+    <div class="key-learning">
+      <strong>Key learning:</strong> Designing for operational environments requires prioritizing clarity, adaptability, and speed over visual complexity.
+    </div>
+
+  </div>
+  </div>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Ok</button>
+<div class="custom-dialog__footer justify-content-end" mat-dialog-actions>
+  <button class="btn btn-primary" (click)="onNoClick()">Ok</button>
+</div>
 </div>
