@@ -19,18 +19,41 @@ export class PortfolioComponent implements OnInit {
       data: {projectName: projectName, projectImage: projectImage},
     });
   }
+  openDialog2(projectName: string, projectImage:string): void {
+    const dialogRef = this.dialog.open(ProjectDetailDialog2, {
+      width: '90%',
+      data: {projectName: projectName, projectImage: projectImage},
+    });
+  }
 
 }
 export interface ProjectDetailData {
   projectImage: string;
   projectName: string;
 }
+
 @Component({
   selector: 'project-details',
   templateUrl: 'project-details.html',
   styleUrls: ['./portfolio.component.scss']
 })
 export class ProjectDetailDialog {
+  constructor(
+    public dialogRef: MatDialogRef<ProjectDetailDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: ProjectDetailData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'project-details-2',
+  templateUrl: 'project-details-2.html',
+  styleUrls: ['./portfolio.component.scss']
+})
+export class ProjectDetailDialog2 {
   constructor(
     public dialogRef: MatDialogRef<ProjectDetailDialog>,
     @Inject(MAT_DIALOG_DATA) public data: ProjectDetailData,

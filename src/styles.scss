@@ -116,6 +116,7 @@ h1 { font-size: 2.65em; font-weight: var(--bold); }
 html, body { height: 100%; }
 
 body {
+    .mat-dialog-content { margin: 0; }
     .mat-tab-labels { justify-content: center;}
     .mat-tab-label { opacity: 1; color:var(--clrdarkgrey); font-size: 1em; min-width: 0;}
     .mat-tab-label-active  { color:var(--clrblack); font-weight: var(--medium); }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { PortfolioComponent, ProjectDetailDialog } from './portfolio/portfolio.component';
+import { PortfolioComponent, ProjectDetailDialog, ProjectDetailDialog2 } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +22,8 @@ import {MatIconModule} from '@angular/material/icon';
     ContactComponent,
     ResumeComponent,
     HomeComponent,
-    ProjectDetailDialog
+    ProjectDetailDialog,
+    ProjectDetailDialog2
   ],
   imports: [
     BrowserModule,
