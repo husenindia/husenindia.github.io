@@ -38,6 +38,19 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
+   openContract(projectName: string, projectImage:string): void {
+    const dialogRef = this.dialog.open(ProjectDetailsContract, {
+      width: '90%',
+      data: {projectName: projectName, projectImage: projectImage},
+    });
+  }
+
+  openBroker(projectName: string, projectImage:string): void {
+    const dialogRef = this.dialog.open(ProjectDetailsBroker, {
+      width: '90%',
+      data: {projectName: projectName, projectImage: projectImage},
+    });
+  }
 }
 export interface ProjectDetailData {
   projectImage: string;
@@ -108,3 +121,36 @@ export class ProjectDetailsPart {
     this.dialogRef.close();
   }
 }
+
+@Component({
+  selector: 'project-details-contract',
+  templateUrl: 'project-details-contract.html',
+  styleUrls: ['./portfolio.component.scss']
+})
+export class ProjectDetailsContract {
+  constructor(
+    public dialogRef: MatDialogRef<ProjectDetailDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: ProjectDetailData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'project-details-broker',
+  templateUrl: 'project-details-broker.html',
+  styleUrls: ['./portfolio.component.scss']
+})
+export class ProjectDetailsBroker {
+  constructor(
+    public dialogRef: MatDialogRef<ProjectDetailDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: ProjectDetailData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
