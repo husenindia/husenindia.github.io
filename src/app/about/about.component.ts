@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
       {name: 'author', content: 'Husen Telwala'},
       {name: 'keywords', content: 'Husen Telwala'}
     ]);
-    this.setTitle('About Husen Telwala');
+    this.setTitle('Husen Telwala');
   }
   public setTitle( newTitle: string) {
     this.title.setTitle( newTitle );

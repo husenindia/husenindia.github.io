@@ -1,0 +1,217 @@
+<div class="bg-white">
+<h2 mat-dialog-title class="custom-dialog__header mb-0">
+  <span>Case study</span>
+  <mat-icon class="btn font-20 lh-normal p-0" (click)="onNoClick()" aria-hidden="false" aria-label="Close icon">close</mat-icon>
+</h2>
+<div mat-dialog-content class="dialog__content">
+  <div class="p-3">
+    <main class="case-study">
+<section class="hero">
+  <h1>Vehicle Parts Management System</h1>
+  <p class="subtitle">UX & UI Case Study · Tablet-Based Warehouse Solution</p>
+</section>
+
+<section>
+  <h2>Overview</h2>
+  <p>
+    The Vehicle Parts Management System is a tablet-based warehouse application
+    designed to help automotive warehouse staff efficiently manage inventory,
+    part movement, storage, and supply operations.
+  </p>
+  <p>
+    The system provides real-time visibility into parts stock, guides staff on
+    where to store or retrieve parts, tracks the complete lifecycle of each part,
+    and enables data-driven decisions through dashboards and reports.
+  </p>
+  <ul class="meta">
+    <li><strong>Role:</strong> Senior UX & UI Designer</li>
+    <li><strong>Platform:</strong> Tablet Application</li>
+    <li><strong>Users:</strong> Warehouse Staff, Inventory Managers</li>
+    <li><strong>Industry:</strong> Automotive</li>
+    <li><strong>Ownership:</strong> End-to-End UX & UI</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Problem</h2>
+  <p>
+    Vehicle parts warehouses often rely on manual processes, spreadsheets,
+    and disconnected systems to manage inventory.
+    This leads to misplaced parts, inaccurate stock levels,
+    delayed service station deliveries, and inefficient use of warehouse space.
+  </p>
+  <p>
+    Managing large and irregularly sized parts further increases complexity,
+    making it difficult for warehouse staff to know where to store or retrieve items
+    quickly and accurately.
+  </p>
+</section>
+
+<section>
+  <h2>Design Goal</h2>
+  <p>
+    Design a <strong>tablet-first inventory management system</strong> that enables
+    warehouse staff to accurately track parts movement, optimize storage space,
+    prevent stock shortages, and gain real-time operational insights.
+  </p>
+</section>
+
+<section>
+  <h2>My Role</h2>
+  <ul>
+    <li>Worked with stakeholders to understand warehouse operations and constraints</li>
+    <li>Mapped end-to-end inventory and parts movement workflows</li>
+    <li>Designed task-focused tablet interactions for warehouse staff</li>
+    <li>Created UX flows for storage guidance, picking, and tracking</li>
+    <li>Led usability reviews and iterative UI improvements</li>
+  </ul>
+</section>
+
+<section>
+  <h2>UX Strategy</h2>
+  <ul>
+    <li><strong>Task-driven design:</strong> Optimized for quick actions on the warehouse floor</li>
+    <li><strong>Guided workflows:</strong> Tablet guides staff where to store or pick parts</li>
+    <li><strong>Real-time accuracy:</strong> Instant updates for incoming and outgoing parts</li>
+    <li><strong>Scalability:</strong> Designed for small and large warehouses</li>
+    <li><strong>Data visibility:</strong> Dashboards and reports for informed decisions</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Key User Flow</h2>
+  <ol>
+    <li>New parts arrive at the warehouse</li>
+    <li>Warehouse staff logs parts using tablet</li>
+    <li>System suggests optimal storage location based on size and availability</li>
+    <li>Parts are stored and location is digitally recorded</li>
+    <li>Parts are picked and dispatched to service stations when required</li>
+    <li>Complete order-to-delivery status is tracked</li>
+    <li>Stock levels are continuously updated</li>
+  </ol>
+</section>
+
+
+<section>
+  <h2>Inventory Tracking & Reporting</h2>
+  <p>
+    The system tracks each part from order placement to final delivery,
+    providing complete traceability.
+    Warehouse managers can access detailed reports on stock levels,
+    usage patterns, and historical trends.
+  </p>
+</section>
+
+<section>
+  <h2>Alerts & Smart Recommendations</h2>
+  <p>
+    Automated alerts notify staff when stock levels fall below defined thresholds.
+    The system recommends reordering parts directly from manufacturers,
+    allowing warehouse teams to initiate procurement directly from the tablet.
+  </p>
+</section>
+
+<section>
+  <h2>Additional Challenge 1: Part Scanning & Location Accuracy</h2>
+  <p>
+    Warehouse staff handle a high volume of parts arriving from manufacturers
+    and being dispatched to service stations throughout the day.
+    Manually identifying parts and their storage or pickup locations
+    increased the risk of misplacement, incorrect dispatch,
+    and inventory inaccuracies.
+  </p>
+  <p>
+    Staff needed a fast, reliable way to identify parts and receive
+    clear guidance on <strong>where to store</strong> or
+    <strong>where to collect</strong> each part without relying on memory
+    or external documentation.
+  </p>
+</section>
+
+<section>
+  <h2>Solution</h2>
+  <p>
+    A tablet-based part scanning workflow was introduced to ensure
+    accuracy and speed during inbound and outbound part handling.
+  </p>
+  <ul>
+    <li>Warehouse staff scan parts when receiving them from the manufacturer</li>
+    <li>The system automatically identifies the part and its attributes</li>
+    <li>The tablet guides staff to the correct storage location based on size and availability</li>
+    <li>The system directs staff to the correct pickup location for that specific order</li>
+    <li>When dispatching parts to service centers, staff scan parts again</li>
+    <li>Inventory and order status are updated in real time</li>
+  </ul>
+  <p>
+    This guided scanning approach reduced manual errors,
+    improved inventory accuracy, and ensured that parts
+    were consistently stored and retrieved from the correct locations.
+  </p>
+</section>
+
+
+<section>
+  <h2>Additional Challenge 2: Multi-Order Parts Fulfillment</h2>
+  <p>
+    Service stations place multiple parts orders throughout the day,
+    and each order can contain a list of several different parts.
+    Managing these concurrent orders manually increased the risk of
+    incorrect picking, partial fulfillment, and delayed deliveries.
+  </p>
+  <p>
+    Warehouse staff needed a clear way to understand
+    <strong>which parts belonged to which order</strong>
+    while handling high volumes under time pressure.
+  </p>
+</section>
+
+<section>
+  <h2>Solution</h2>
+  <p>
+    The system groups parts automatically by order,
+    creating a clear, order-based fulfillment workflow for warehouse staff.
+  </p>
+  <ul>
+    <li>Each service station order is visually grouped within the tablet interface</li>
+    <li>All parts required for an order are listed together with quantities</li>
+    <li>Picking status is tracked at both part-level and order-level</li>
+    <li>Orders move through clear states: Pending → Picking → Ready → Dispatched</li>
+  </ul>
+  <p>
+    This approach reduced cognitive load for warehouse staff,
+    minimized picking errors, and ensured complete and accurate
+    order fulfillment before dispatch.
+  </p>
+</section>
+
+
+<section>
+  <h2>Outcome</h2>
+  <p>
+    The Vehicle Parts Management System significantly improved inventory accuracy,
+    reduced part misplacement, and optimized warehouse space utilization.
+  </p>
+  <p>
+    By digitizing storage guidance, tracking, and reordering,
+    the solution streamlined warehouse operations and improved
+    service station readiness.
+  </p>
+</section>
+
+<section class="key-learning">
+  <h2>Key Learnings</h2>
+  <p>
+    Designing for warehouse environments requires a strong focus on clarity,
+    speed, and error prevention.
+    Tablet-first, guided workflows proved highly effective in reducing
+    cognitive load and operational mistakes in high-volume inventory systems.
+  </p>
+</section>
+
+    </main>
+</div>
+</div>
+<div class="custom-dialog__footer justify-content-end" mat-dialog-actions>
+  <button class="btn btn-primary" (click)="onNoClick()">Ok</button>
+</div>
+</div>

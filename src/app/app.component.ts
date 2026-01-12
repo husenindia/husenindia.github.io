@@ -13,5 +13,5 @@ export class AppComponent {
   faSuitcase = faSuitcase;
   faFileAlt = faFileAlt;
   faEnvelope = faEnvelope;
-  title = 'newsite';
+  title = 'Husen Telwala';
 }
